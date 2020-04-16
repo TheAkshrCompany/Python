@@ -1,0 +1,20 @@
+###########################
+# code by Harsh Tiwari
+###########################
+# code to perform bianry search
+
+def binarySearch(list,low,high,var):
+    if high<low:
+        return none
+    else:
+        mid=low+((high-low)//2)
+        if list[mid]>var:
+            return binarySearch(list,low,mid-1,var)
+        elif list[mid]<var:
+            return binarySearch(list,mid+1,high,var)
+        else :
+            return mid
+
+list=[2,4,6,75,100,440,999]
+print(binarySearch(list,0,6,100))
+

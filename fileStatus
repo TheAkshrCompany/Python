@@ -1,0 +1,13 @@
+#########################
+#Python File Handling   #
+#Basic file Status      #
+#CODED BY HARSH TIWARI  #
+#########################
+f=open("test.txt","r")
+print("filename:",f.name)
+print("filemode:",f.mode)
+print("Is file readable ?",f.readable())
+print("Is file closed",f.closed)
+f.close()
+print("Is file closed",f.closed)
+

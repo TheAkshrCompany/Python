@@ -1,0 +1,21 @@
+##############################
+# Puthon Code                #
+# Counting the the word "my" #
+# Code by Harsh Tiwari       #
+##############################
+#######################################################
+    #test.txt                
+this is my website
+i have displayed my performances in the choice section.
+#########################################################
+a=open("test.txt","r")
+def countMy(a):
+    count=0
+    r=a.read()
+    a2=r.split()
+    for i in a2:
+        if i=="my":
+            count=count+1
+    print("My occurs ",count," times")
+countMy(a)
+a.close()
